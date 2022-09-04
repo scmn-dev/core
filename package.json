@@ -1,0 +1,62 @@
+{
+  "name": "core",
+  "private": true,
+  "description": "📡 backend infrastructure for a password manager products.",
+  "author": "@abdfnx",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/USERNAME/REPO.git"
+  },
+  "scripts": {
+    "clean": "rimraf node_modules"
+  },
+  "keywords": [
+    "core",
+    "password-management",
+    "backend",
+    "infrastructure"
+  ],
+  "dependencies": {
+    "axios": "^0.27.2",
+    "classnames": "2.3.1",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "graphql": "^16.4.0",
+    "next": "12.1.6",
+    "postcss": "8.4.13",
+    "postcss-import": "14.1.0",
+    "react": "18.1.0",
+    "react-dom": "18.1.0",
+    "shelljs": "^0.8.5",
+    "tailwindcss": "^3.0.24"
+  },
+  "devDependencies": {
+    "@types/node": "17.0.31",
+    "@types/react": "18.0.8",
+    "ansi-regex": "^6.0.1",
+    "async": "^3.2.3",
+    "autoprefixer": "10.4.7",
+    "fastify-static": "^4.7.0",
+    "minimist": "^1.2.6",
+    "node-fetch": "^3.2.10",
+    "nth-check": "2.1.1",
+    "path-parse": "^1.0.7",
+    "postcss-custom-media": "8.0.0",
+    "postcss-loader": "6.2.1",
+    "postcss-nested": "5.0.6",
+    "rimraf": "^3.0.2",
+    "serialize-javascript": "6.0.0",
+    "ts-node": "10.9.1",
+    "turbo": "1.2.8",
+    "typescript": "4.6.4"
+  },
+  "resolutions": {
+    "cssnano-preset-simple": "3.0.0"
+  },
+  "workspaces": [
+    "auth",
+    "assets"
+  ],
+  "packageManager": "yarn@1.22.19"
+}

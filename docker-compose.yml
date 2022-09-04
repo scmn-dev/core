@@ -1,0 +1,42 @@
+version: "3.3"
+
+services:
+  postgres:
+    image: postgres:alpine
+    restart: on-failure
+    environment:
+      - POSTGRES_DB=DATABASE_NAME
+      - POSTGRES_USER=DATABASE_USERNAME
+      - POSTGRES_PASSWORD=DATABASE_PASSWORD
+    ports:
+      - 5777:5777
+    volumes:
+      - $HOME/docker/volumes/postgres:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+      start_period: 5s
+
+  core:
+    container_name: core
+    image: core:latest
+    restart: always
+    environment:
+      - SM_DB_NAME=DATABASE_NAME
+      - SM_DB_USERNAME=DATABASE_USERNAME
+      - SM_DB_PASSWORD=DATABASE_PASSWORD
+      - SM_DB_HOST=DATABASE_HOST
+      - SM_DB_PORT=5777
+      - SM_DB_LOG_MODE=false
+      - SM_DB_SSL_MODE=disable
+    build:
+      context: .
+    depends_on:
+      postgres:
+        condition: service_healthy
+    ports:
+      - 3625:3625
+    volumes:
+      - $HOME/docker/volumes/core/config.yml:/app/config.yml

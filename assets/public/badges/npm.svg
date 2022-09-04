@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="228" height="28" role="img" aria-label="NPM (JUST FOR WINDOWS)">
+    <title>NPM (JUST FOR WINDOWS)</title>
+    <g shape-rendering="crispEdges">
+        <rect width="0" height="28" fill="#555" />
+        <rect x="0" width="228" height="28" fill="#9cf" />
+    </g>
+    <g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="100">
+        <image x="9" y="7" width="14" height="14" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MCA0MCI+PHBhdGggZD0iTTAgMGg0MHY0MEgwVjB6IiBmaWxsPSIjY2IwMDAwIi8+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTcgN2gyNnYyNmgtN1YxNGgtNnYxOUg3eiIvPjwvc3ZnPgo=" />
+        <text fill="#333" x="1230" y="175" font-weight="bold" transform="scale(.1)" textLength="1860">NPM (JUST FOR WINDOWS)</text>
+    </g>
+</svg>

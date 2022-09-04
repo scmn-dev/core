@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Inter:wght@100;300;500;700;900&display=swap");
+@import "variables.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  scroll-behavior: smooth;
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: var(--c-black);
+  color: var(--c-text);
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  color: var(--c-text);
+}
+
+.contentBody {
+  display: flex;
+  flex-direction: column;
+
+  @media (--d) {
+    flex-direction: row;
+  }
+}
+
+.cards {
+  margin-top: 48px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 32px;
+
+  @media (--d) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 10px 30px;
+  overflow-x: auto;
+
+  @media (--md) {
+    padding: 40px 64px;
+  }
+}
+
+.containerIndex {
+  width: 100%;
+  height: 100%;
+  padding: 10px 30px;
+  overflow-x: auto;
+
+  @media (--d) {
+    padding: 100px 30px;
+  }
+
+  @media (--md) {
+    padding: 64px;
+  }
+}
+
+.thankyou {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .platforms {
+    margin-top: 50px;
+    font-weight: 500;
+  }
+
+  .downloadSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 15px;
+
+    button {
+      margin-right: 10px;
+      margin-bottom: 20px;
+
+      @media (--d) {
+        margin-bottom: 0px;
+      }
+    }
+
+    @media (--d) {
+      flex-direction: row;
+    }
+  }
+
+  .content {
+    max-width: 90%;
+
+    @media (--d) {
+      max-width: 95%;
+    }
+
+    @media (--md) {
+      max-width: 60%;
+    }
+  }
+  .soonText {
+    margin-top: 30px;
+    color: var(--c-dark-30);
+  }
+  .soon {
+    width: 50%;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+}
+
+.Toastify__toast {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 24px 0px 24px;
+  background-color: var(--c-dark-50);
+  border-radius: 8px;
+}
+
+input {
+  font-family: Inter;
+}
+
+::-webkit-scrollbar {
+  width: 5px !important;
+  height: 5px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--c-dark-60) !important;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 3px !important;
+  background: #bbbbbb !important;
+}
+
+::-webkit-scrollbar-corner {
+  background: #e1e1e1 !important;
+}
+
+@font-face {
+  font-family: Farray;
+  src: url("https://assets.secman.dev/fonts/farray.otf");
+}
+
+.farray {
+  font-family: Farray;
+}
+
+.button {
+  @apply inline-flex px-2.5 py-1.5 text-xs text-center items-center justify-center border border-transparent font-medium shadow-sm text-white bg-black focus:outline-none focus:ring-1 focus:ring-offset-0 focus:ring-gray-800;
+  @apply disabled:bg-opacity-80;
+  @apply rounded-md;
+}
+
+.button__round {
+  @apply rounded-full !important;
+}
+
+.button__secondary {
+  @apply bg-white text-black;
+}
+
+.button__third {
+  @apply bg-black text-white;
+}
+
+.button__sm {
+  @apply px-2.5 py-1.5 text-xs;
+}
+
+.button__md {
+  @apply px-3 py-2 text-sm;
+}
+
+.button__lg {
+  @apply px-4 py-2 text-sm;
+}
+
+.button__xl {
+  @apply px-6 py-3 text-base;
+}
+
+blockquote {
+  @apply my-6 p-2;
+  @apply overflow-auto break-words;
+}
+
+a {
+  @apply text-blue-300;
+}
+
+.text-small {
+  font-size: 12px;
+}

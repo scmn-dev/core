@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="63.5" height="28" role="img" aria-label="GIT">
+    <title>GIT</title>
+    <g shape-rendering="crispEdges">
+        <rect width="0" height="28" fill="#555" />
+        <rect x="0" width="63.5" height="28" fill="#9cf" />
+    </g>
+    <g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="100">
+        <image x="9" y="7" width="14" height="14" xlink:href="data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRjA1MDMyIiByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+R2l0IGljb248L3RpdGxlPjxwYXRoIGQ9Ik0yMy41NDYgMTAuOTNMMTMuMDY3LjQ1MmMtLjYwNC0uNjAzLTEuNTgyLS42MDMtMi4xODggMEw4LjcwOCAyLjYyN2wyLjc2IDIuNzZjLjY0NS0uMjE1IDEuMzc5LS4wNyAxLjg4OS40NDEuNTE2LjUxNS42NTggMS4yNTguNDM4IDEuOWwyLjY1OCAyLjY2Yy42NDUtLjIyMyAxLjM4Ny0uMDc4IDEuOS40MzUuNzIxLjcyLjcyMSAxLjg4NCAwIDIuNjA0LS43MTkuNzE5LTEuODgxLjcxOS0yLjYgMC0uNTM5LS41NDEtLjY3NC0xLjMzNy0uNDA0LTEuOTk2TDEyLjg2IDguOTU1djYuNTI1Yy4xNzYuMDg2LjM0Mi4yMDMuNDg4LjM0OC43MTMuNzIxLjcxMyAxLjg4MyAwIDIuNi0uNzE5LjcyMS0xLjg4OS43MjEtMi42MDkgMC0uNzE5LS43MTktLjcxOS0xLjg3OSAwLTIuNTk4LjE4Mi0uMTguMzg3LS4zMTYuNjA1LS40MDZWOC44MzVjLS4yMTctLjA5MS0uNDI0LS4yMjItLjYtLjQwMS0uNTQ1LS41NDUtLjY3Ni0xLjM0Mi0uMzk2LTIuMDA5TDcuNjM2IDMuNy40NSAxMC44ODFjLS42LjYwNS0uNiAxLjU4NCAwIDIuMTg5bDEwLjQ4IDEwLjQ3N2MuNjA0LjYwNCAxLjU4Mi42MDQgMi4xODYgMGwxMC40My0xMC40M2MuNjA1LS42MDMuNjA1LTEuNTgyIDAtMi4xODciLz48L3N2Zz4=" />
+        <text fill="#333" x="407.5" y="175" font-weight="bold" transform="scale(.1)" textLength="215">GIT</text>
+    </g>
+</svg>

@@ -1,0 +1,48 @@
+# https://taskfile.dev
+
+version: "3"
+
+vars:
+  BOTWAY_UNIX_PATH: /usr/local/bin
+  BOTWAY_WINDOWS_PATH: ~\AppData\Local\botway\bin
+
+tasks:
+  default:
+    cmds:
+      - task: build
+
+  build:
+    cmds:
+      - go mod tidy
+      - CGO_ENABLED=0 GOOS=linux go build -a -ldflags '-w -extldflags "-static"' -o core
+      - turbo run build
+
+  dev:
+    cmds:
+      - turbo run dev --parallel
+
+  run:
+    cmds:
+      - go run ./main.go
+
+  deploy:
+    cmds:
+      - railway up
+
+  docs:
+    cmds:
+      - git clone https://github.com/algolia/docsearch-scraper ds-scarper
+      - cp .env ds-scarper
+      - if ! [ -x "$(command -v pyenv)" ]; then curl https://pyenv.run | bash && exec $SHELL; else echo "Pyenv is installed 🐍"; fi
+      - if ! [ -x "$(command -v pipenv)" ]; then pip install --user pipenv; else echo "Pipenv is installed 🐍"; fi
+      - if ! [ -d ~/.pyenv/versions/3.6.15 ]; then pyenv install 3.6.15; else echo 'Python 3.6.15 is installed 🐍'; fi
+      - cd ds-scarper && pipenv install && pipenv shell './docsearch run ../algolia.config.json && exit && cd ..'
+      - rm -rf ./ds-scarper
+
+  docker:
+    cmds:
+      - docker build -t smcr/core .
+
+  remove-docker-images:
+    cmds:
+      - docker rmi smcr/core

@@ -1,0 +1,58 @@
+### Go ###
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.log
+/core*
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+### Go Patch ###
+/vendor/
+/Godeps/
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+
+##DS STORE##
+.DS_Store
+.DS_Store? 
+
+## BACKUP FILE ##
+/store/$PASSWORD_MANAGER_NAME-*.bak
+
+## CONFIG FILE ##
+config.yml
+
+## GITCONFIG ##
+.gitconfig
+
+## ENVIRONMENT FILE ##
+.env
+
+## DOCS ##
+!/docs/.env
+/docs/ds-scarper
+
+# GoLand
+.idea/
+
+sendgrid.env
+
+# node
+node_modules
+!/cmd/node_modules
+
+# vercel
+.vercel
+
+# turbo
+.turbo

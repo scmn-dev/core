@@ -1,0 +1,10 @@
+{
+  "name": "assets.sm",
+  "version": "2.0.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next -p 3010",
+    "build": "next build",
+    "start": "next start"
+  }
+}
