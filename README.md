@@ -21,3 +21,16 @@
 **3. Against SQL injection, $PASSWORD_MANAGER_NAME uses Gorm package to handle database queries which clears all queries.**
 
 **4. There is rate limiter for signin attempts against brute force attacks.**
+
+## Secman
+
+> 👊 Human-friendly and amazing open-source secrets manager.
+<p align="center">
+  <img src="https://raw.githubusercontent.com/scmn-dev/.github/main/assets/secman.svg" />
+</p>
+
+<p align="center">
+  <a href="https://secman.dev"><strong>secman.dev</strong></a>
+</p>
+
+> `secman` is a password manager can store, retrieves, generates, and synchronizes passwords, The most important difference is secman is not GPG cored. Instead, it uses a master password to securely store your passwords. and you can easily manage your passwords from everywhere with **Secman Cloud** 😉.
